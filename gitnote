@@ -55,3 +55,12 @@ git branch -d dev //删除dev分支了：
 
 如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息
 git merge --no-ff -m "merge with no-ff" dev
+
+git stash //把当前工作现场“储藏”起来 
+git status查看工作区
+
+工作现场还在，Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法：
+
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
