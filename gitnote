@@ -1,3 +1,4 @@
+git remote -v //查看远程库详细信息
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 通过git init命令把这个目录变成Git可以管理的仓库：
