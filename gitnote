@@ -1,0 +1,21 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+通过git init命令把这个目录变成Git可以管理的仓库：
+
+使用命令git add <file>，注意，可反复多次使用，添加多个文件；//添加到暂存区
+使用命令git commit -m <message>，完成。//添加到版本库
+
+
+如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+提交后，用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别：
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。在Git中，用HEAD表示当前版本 //回退版本库
+
+git reset HEAD <file> //回退暂存区 git checkout -- file//用版本库里的版本替换工作区
+
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+git remote add origin git@github.com:xin02/learngit.git
+git push -u origin master
