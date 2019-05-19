@@ -22,3 +22,5 @@ id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告�
 git remote add origin git@github.com:xin02/learngit.git
 git push -u origin master
 git push origin master推送最新修改
+
+获取仓库的地址，然后使用git clone命令克隆。
