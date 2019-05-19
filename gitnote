@@ -24,3 +24,13 @@ git push -u origin master
 git push origin master推送最新修改
 
 获取仓库的地址，然后使用git clone命令克隆。
+
+创建dev分支，然后切换到dev分支
+git checkout -b dev
+
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+
+$ git branch dev
+$ git checkout dev
+
+git branch命令查看当前分支：
