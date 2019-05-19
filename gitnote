@@ -68,3 +68,7 @@ git status查看工作区
 你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
 
 $ git stash apply stash@{0}
+
+开发一个新feature，最好新建一个分支；
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
